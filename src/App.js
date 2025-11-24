@@ -80,6 +80,30 @@ function App() {
                                 </ProtectedRoute>
                             }
                         />
+                        <Route
+                            path="/dashboard/categories"
+                            element={
+                                <ProtectedRoute>
+                                    <Dashboard />
+                                </ProtectedRoute>
+                            }
+                        />
+                        <Route
+                            path="/dashboard/support"
+                            element={
+                                <ProtectedRoute>
+                                    <Dashboard />
+                                </ProtectedRoute>
+                            }
+                        />
+                        <Route
+                            path="/dashboard/feedback"
+                            element={
+                                <ProtectedRoute>
+                                    <Dashboard />
+                                </ProtectedRoute>
+                            }
+                        />
                         <Route path="/" element={<Navigate to="/login" />} />
                         <Route path="*" element={<Navigate to="/login" />} />
                     </Routes>
